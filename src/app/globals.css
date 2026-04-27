@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-navy: #2F4156;
+  --color-navy-light: #3A5268;
+  --color-teal: #567C8D;
+  --color-teal-light: #6B8E9E;
+  --color-teal-muted: #7A9AAA;
+  --color-sky: #C8D9E6;
+  --color-beige: #F5EFEB;
+  --color-beige-dark: #E8E0DA;
+  --color-beige-bg: #EEE8E2;
+  --color-white: #FFFFFF;
+
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Playfair Display", ui-serif, Georgia, serif;
+}
+
+body {
+  background: var(--color-beige-bg);
+  color: var(--color-navy);
+  font-family: var(--font-sans);
+}
+
+.cover-1 { background: linear-gradient(145deg, #2F4156, #1E2E3D); }
+.cover-2 { background: linear-gradient(145deg, #567C8D, #3E5A68); }
+.cover-3 { background: linear-gradient(145deg, #3A5060, #2A3A48); }
+.cover-4 { background: linear-gradient(145deg, #445C6E, #334A5A); }
+.cover-5 { background: linear-gradient(145deg, #4A6272, #384E5E); }
+.cover-6 { background: linear-gradient(145deg, #506878, #3E5565); }
+.cover-7 { background: linear-gradient(145deg, #364E5E, #253A48); }
+
+.cover-light { color: #C8D9E6; }
+.cover-cream { color: #F5EFEB; }
+
+.hover-lift { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+.hover-lift:hover { transform: translateY(-4px); box-shadow: 0 8px 20px rgba(47,65,86,0.15); }
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: var(--color-teal) !important;
+}
