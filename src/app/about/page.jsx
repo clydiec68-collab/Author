@@ -66,21 +66,23 @@ export default function AboutPage() {
         </h2>
         <div className="text-[15px] text-teal-muted leading-[1.8] max-w-[720px] space-y-4">
           <p>
-            Clydie Cronjé has spent his late fifties doing something quietly
+            Clydie Cronjé has spent most of his life writing, in notepad, onenote, word perfect and MS word.
+            In his late fifties he started putting his life's work together, consolidating, cleaning up and 
+            comibning his life time of writing. What he ended up with is something quietly
             remarkable: writing thirty books across genres that most authors
-            would never dare share a shelf. He writes literary fiction rooted in
+            would never dare share a shelf. He wrote literary fiction rooted in
             the red dust and mine-whistle rhythms of South Africa&apos;s West Rand.
-            He writes YA supernatural mysteries set in boarding schools where the
-            buildings themselves are alive and listening. He writes about
+            He wrote YA supernatural mysteries set in boarding schools where the
+            buildings themselves are alive and listening. He wrote about
             artificial intelligence and what it might mean to engineer love. He
-            writes about the Tao Te Ching as if Lao Tzu were a management
+            wrote his own interpretation of the Tao Te Ching as if Lao Tzu were a management
             consultant with something urgent to say to 2026.
           </p>
           <p>
             He does not sit still between books. His garden is a living canvas of
             bonsai — not collected in one place but threaded through every
             corner, each tree a years-long conversation between patience and
-            intention. He paints. He builds and repairs electronics with the same
+            intention. He paints mostly nature, he builds and repairs electronics with the same
             careful attention he brings to a sentence. He loves technology not as
             a tool but as a language, one he has been fluent in for decades and
             still finds surprising.
