@@ -7,9 +7,9 @@ export default function ContactPage() {
 
   return (
     <>
-      <div className="grid grid-cols-2 border-b border-beige-dark">
+      <div className="flex flex-col md:grid md:grid-cols-2 border-b border-beige-dark">
         {/* Form */}
-        <div className="p-12 border-r border-beige-dark">
+        <div className="p-8 md:p-12 md:border-r border-beige-dark">
           <h1 className="font-display text-[28px] font-semibold text-navy mb-2">
             Get in touch
           </h1>
@@ -30,7 +30,7 @@ export default function ContactPage() {
             </div>
           ) : (
             <div className="space-y-5">
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
                   <label className="block text-[13px] font-medium text-navy mb-1.5">
                     First name
@@ -100,7 +100,7 @@ export default function ContactPage() {
         </div>
 
         {/* Info & social */}
-        <div className="p-12 bg-beige">
+        <div className="p-8 md:p-12 bg-beige">
           <h2 className="font-display text-[22px] font-semibold text-navy mb-6">
             Connect
           </h2>

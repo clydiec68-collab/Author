@@ -9,7 +9,7 @@ export default function BooksPage() {
   return (
     <>
       {/* Header */}
-      <div className="px-10 py-12 bg-beige border-b border-beige-dark flex justify-between items-end">
+      <div className="px-6 md:px-10 py-8 md:py-12 bg-beige border-b border-beige-dark flex flex-col sm:flex-row justify-between items-start sm:items-end gap-4">
         <div>
           <h1 className="font-display text-3xl font-semibold text-navy mb-1.5">
             All books
@@ -45,9 +45,9 @@ export default function BooksPage() {
       {series.map((s) => (
         <div
           key={s.slug}
-          className="px-10 py-9 border-b border-beige-dark last:border-b-0"
+          className="px-6 md:px-10 py-7 md:py-9 border-b border-beige-dark last:border-b-0"
         >
-          <div className="flex justify-between items-end mb-5">
+          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-4 mb-5">
             <div>
               <h2 className="font-display text-[22px] font-semibold text-navy mb-1">
                 {s.title}
@@ -63,7 +63,7 @@ export default function BooksPage() {
               Series page →
             </Link>
           </div>
-          <div className="grid grid-cols-4 gap-5">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 md:gap-5">
             {(seriesBooks[s.slug] || []).map((book) => (
               <div key={book.num}>
                 <BookCover
@@ -91,7 +91,7 @@ export default function BooksPage() {
       ))}
 
       {/* Standalones */}
-      <div className="px-10 py-9 border-b border-beige-dark">
+      <div className="px-6 md:px-10 py-7 md:py-9 border-b border-beige-dark">
         <h2 className="font-display text-[22px] font-semibold text-navy mb-1">
           Standalone books
         </h2>
@@ -99,7 +99,7 @@ export default function BooksPage() {
           5 titles across genres — leadership philosophy, sci-fi, neuroscience,
           historical fiction, professional
         </p>
-        <div className="grid grid-cols-5 gap-5">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 md:gap-5">
           {standalones.map((book) => (
             <div key={book.title}>
               <BookCover

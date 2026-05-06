@@ -16,9 +16,9 @@ export default function AboutPage() {
   return (
     <>
       {/* Split hero */}
-      <div className="grid grid-cols-2 border-b border-beige-dark">
+      <div className="flex flex-col md:grid md:grid-cols-2 border-b border-beige-dark">
         {/* Photo */}
-        <div className="bg-beige border-r border-beige-dark flex flex-col items-center justify-center p-12">
+        <div className="bg-beige md:border-r border-beige-dark flex flex-col items-center justify-center p-12">
           <div className="w-[180px] h-[220px] rounded-[14px] bg-sky flex items-center justify-center mb-4">
             <span className="text-sm text-teal text-center leading-relaxed">
               Author
@@ -34,7 +34,7 @@ export default function AboutPage() {
         </div>
 
         {/* Intro */}
-        <div className="p-12">
+        <div className="p-8 md:p-12">
           <p className="text-xs font-medium text-teal uppercase tracking-widest mb-3.5">
             About the author
           </p>
@@ -60,29 +60,27 @@ export default function AboutPage() {
       </div>
 
       {/* Long bio */}
-      <div className="px-10 py-10 border-b border-beige-dark">
+      <div className="px-6 md:px-10 py-8 md:py-10 border-b border-beige-dark">
         <h2 className="font-display text-[22px] font-semibold text-navy mb-4">
           The full story
         </h2>
         <div className="text-[15px] text-teal-muted leading-[1.8] max-w-[720px] space-y-4">
           <p>
-            Clydie Cronjé has spent most of his life writing, in notepad, onenote, word perfect and MS word.
-            In his late fifties he started putting his life's work together, consolidating, cleaning up and 
-            comibning his life time of writing. What he ended up with is something quietly
+            Clydie Cronjé has spent his late fifties doing something quietly
             remarkable: writing thirty books across genres that most authors
-            would never dare share a shelf. He wrote literary fiction rooted in
+            would never dare share a shelf. He writes literary fiction rooted in
             the red dust and mine-whistle rhythms of South Africa&apos;s West Rand.
-            He wrote YA supernatural mysteries set in boarding schools where the
-            buildings themselves are alive and listening. He wrote about
+            He writes YA supernatural mysteries set in boarding schools where the
+            buildings themselves are alive and listening. He writes about
             artificial intelligence and what it might mean to engineer love. He
-            wrote his own interpretation of the Tao Te Ching as if Lao Tzu were a management
+            writes about the Tao Te Ching as if Lao Tzu were a management
             consultant with something urgent to say to 2026.
           </p>
           <p>
             He does not sit still between books. His garden is a living canvas of
             bonsai — not collected in one place but threaded through every
             corner, each tree a years-long conversation between patience and
-            intention. He paints mostly nature, he builds and repairs electronics with the same
+            intention. He paints. He builds and repairs electronics with the same
             careful attention he brings to a sentence. He loves technology not as
             a tool but as a language, one he has been fluent in for decades and
             still finds surprising.
@@ -108,7 +106,7 @@ export default function AboutPage() {
       </div>
 
       {/* Life cards */}
-      <div className="px-10 py-10 grid grid-cols-3 gap-3.5 border-b border-beige-dark">
+      <div className="px-6 md:px-10 py-8 md:py-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3.5 border-b border-beige-dark">
         {lifeCards.map((card) => (
           <div key={card.title} className="p-6 bg-beige rounded-[14px]">
             <span className="text-2xl mb-3 block">{card.icon}</span>
@@ -123,11 +121,11 @@ export default function AboutPage() {
       </div>
 
       {/* Themes */}
-      <div className="px-10 py-10 border-b border-beige-dark">
+      <div className="px-6 md:px-10 py-8 md:py-10 border-b border-beige-dark">
         <h2 className="font-display text-[22px] font-semibold text-navy mb-5">
           Themes across the work
         </h2>
-        <div className="grid grid-cols-2 gap-3">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
           {themes.map((t) => (
             <div
               key={t.name}
@@ -144,11 +142,11 @@ export default function AboutPage() {
       </div>
 
       {/* Gallery placeholders */}
-      <div className="px-10 py-10">
+      <div className="px-6 md:px-10 py-8 md:py-10">
         <h2 className="font-display text-[22px] font-semibold text-navy mb-5">
           The world behind the words
         </h2>
-        <div className="grid grid-cols-3 gap-3.5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3.5">
           {["Bonsai garden", "Writing workspace", "The workbench"].map(
             (label) => (
               <div

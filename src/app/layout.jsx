@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body>
-        <div className="max-w-[1100px] mx-auto px-5 py-10">
+        <div className="max-w-[1100px] mx-auto px-3 md:px-5 py-4 md:py-10">
           <div className="bg-white rounded-2xl overflow-hidden shadow-sm">
             <Navbar />
             <main>{children}</main>

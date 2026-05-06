@@ -29,9 +29,9 @@ export default async function SeriesPage({ params }) {
   return (
     <>
       {/* Hero */}
-      <div className="px-10 py-12 bg-beige border-b border-beige-dark flex gap-9 items-center">
+      <div className="px-6 md:px-10 py-8 md:py-12 bg-beige border-b border-beige-dark flex flex-col sm:flex-row gap-6 md:gap-9 items-center">
         {/* Spine previews */}
-        <div className="flex gap-1.5 shrink-0">
+        <div className="hidden sm:flex gap-1.5 shrink-0">
           {books.slice(0, 7).map((book) => (
             <div
               key={book.num}
@@ -79,7 +79,7 @@ export default async function SeriesPage({ params }) {
       </div>
 
       {/* Reading order */}
-      <div className="px-10 py-10">
+      <div className="px-6 md:px-10 py-8 md:py-10">
         <h2 className="font-display text-[22px] font-semibold text-navy mb-6">
           Reading order
         </h2>
@@ -88,7 +88,7 @@ export default async function SeriesPage({ params }) {
           {books.map((book) => (
             <div
               key={book.num}
-              className="flex gap-6 p-6 border border-beige-dark rounded-[14px] hover:border-sky hover:bg-[#FAFBFC] transition-all items-start"
+              className="flex flex-col sm:flex-row gap-4 sm:gap-6 p-5 sm:p-6 border border-beige-dark rounded-[14px] hover:border-sky hover:bg-[#FAFBFC] transition-all items-start"
             >
               <span className="font-display text-[28px] font-semibold text-sky w-9 shrink-0 text-center pt-2">
                 {book.num}
@@ -140,7 +140,7 @@ export default async function SeriesPage({ params }) {
         <h2 className="font-display text-[22px] font-semibold text-navy mb-5">
           Also by Clydie Cronjé
         </h2>
-        <div className="grid grid-cols-3 gap-3.5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3.5">
           {otherSeries.map((o) => {
             const firstBook = (seriesBooks[o.slug] || [])[0];
             return (

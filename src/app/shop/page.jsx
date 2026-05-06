@@ -15,7 +15,7 @@ export default function ShopPage() {
   return (
     <>
       {/* Header */}
-      <div className="px-10 py-12 bg-beige border-b border-beige-dark">
+      <div className="px-6 md:px-10 py-8 md:py-12 bg-beige border-b border-beige-dark">
         <p className="text-xs font-medium text-teal uppercase tracking-widest mb-3">
           Beyond the books
         </p>
@@ -30,8 +30,8 @@ export default function ShopPage() {
       </div>
 
       {/* ---- Books section ---- */}
-      <div className="px-10 py-10 border-b border-beige-dark">
-        <div className="flex items-start justify-between mb-6">
+      <div className="px-6 md:px-10 py-8 md:py-10 border-b border-beige-dark">
+        <div className="flex flex-col sm:flex-row items-start justify-between gap-3 mb-6">
           <div>
             <h2 className="font-display text-[22px] font-semibold text-navy mb-1">
               Books
@@ -49,7 +49,7 @@ export default function ShopPage() {
           </Link>
         </div>
 
-        <div className="grid grid-cols-3 gap-3.5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3.5">
           <div className="p-5 border border-beige-dark rounded-[14px]">
             <div className="flex items-center gap-3 mb-3">
               <div className="w-10 h-10 rounded-[10px] bg-navy flex items-center justify-center">
@@ -107,8 +107,8 @@ export default function ShopPage() {
       </div>
 
       {/* ---- Etsy — Solitary Witch Guides ---- */}
-      <div className="px-10 py-10 border-b border-beige-dark">
-        <div className="flex items-start justify-between mb-6">
+      <div className="px-6 md:px-10 py-8 md:py-10 border-b border-beige-dark">
+        <div className="flex flex-col sm:flex-row items-start justify-between gap-3 mb-6">
           <div>
             <div className="flex items-center gap-3 mb-2">
               <span className="text-2xl">🕯️</span>
@@ -132,7 +132,7 @@ export default function ShopPage() {
           </a>
         </div>
 
-        <div className="grid grid-cols-5 gap-3">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3">
           {etsyProducts.map((product) => (
             <a
               key={product.title}
@@ -162,8 +162,8 @@ export default function ShopPage() {
       </div>
 
       {/* ---- The Hollow Library store ---- */}
-      <div className="px-10 py-10 border-b border-beige-dark">
-        <div className="grid grid-cols-2 gap-8">
+      <div className="px-6 md:px-10 py-8 md:py-10 border-b border-beige-dark">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
             <div className="flex items-center gap-3 mb-3">
               <span className="text-2xl">🌙</span>
@@ -209,11 +209,11 @@ export default function ShopPage() {
       </div>
 
       {/* ---- Platform summary ---- */}
-      <div className="px-10 py-10">
+      <div className="px-6 md:px-10 py-8 md:py-10">
         <p className="text-xs font-medium text-teal-muted uppercase tracking-widest mb-5">
           How payments work
         </p>
-        <div className="grid grid-cols-4 gap-3">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
           {[
             {
               name: "Books2Read",
